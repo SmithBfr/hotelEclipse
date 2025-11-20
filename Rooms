@@ -1,0 +1,173 @@
+type: collection.insomnia.rest/5.0
+name: Reservations
+meta:
+  id: wrk_5e1c04c50b86491b8ce5d910c961c9e3
+  created: 1763662409869
+  modified: 1763662409869
+  description: ""
+collection:
+  - url: http://localhost:8080/reservations
+    name: Cadastro
+    meta:
+      id: req_faddbba335fe4f6fa097852da9678276
+      created: 1763662422497
+      modified: 1763664798013
+      isPrivate: false
+      description: ""
+      sortKey: -1763662422497
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "customer": { "id": 1 },
+          "room": { "id": 1 },
+          "checkin": "2025-11-21",
+          "checkout": "2025-11-22",
+          "status": "IN_USE"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/reservations/1
+    name: Get Id
+    meta:
+      id: req_18d12512cbe6419ba74465bcb4439db0
+      created: 1763663800206
+      modified: 1763663844468
+      isPrivate: false
+      description: ""
+      sortKey: -1763658876660.5
+    method: GET
+    body:
+      mimeType: application/json
+      text: |
+        {
+         
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/reservations
+    name: Get All
+    meta:
+      id: req_33f2405e45c84913adcd223baf23f767
+      created: 1763663807845
+      modified: 1763663821487
+      isPrivate: false
+      description: ""
+      sortKey: -1763657103742.25
+    method: GET
+    body:
+      mimeType: application/json
+      text: |
+        {
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/reservations/1
+    name: Update
+    meta:
+      id: req_336da39be8c24c05be823665f6605442
+      created: 1763664199922
+      modified: 1763665037785
+      isPrivate: false
+      description: ""
+      sortKey: -1763660649578.75
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "customer": { "id": 1 },
+          "room": { "id": 1 },
+          "checkin": "2028-11-21",
+          "checkout": "2023-11-22",
+          "status": "FINISHED"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/reservations/1
+    name: Delete
+    meta:
+      id: req_afcb7d25c1e74f8e8b3b7b0106bb9911
+      created: 1763665061041
+      modified: 1763665068589
+      isPrivate: false
+      description: ""
+      sortKey: -1763659763119.625
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |
+        {
+         
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_86e45cd750ef24aba52762f4c92d4a4060d9d7ee
+    created: 1763662409884
+    modified: 1763662409884
+environments:
+  name: Base Environment
+  meta:
+    id: env_86e45cd750ef24aba52762f4c92d4a4060d9d7ee
+    created: 1763662409881
+    modified: 1763662409881
+    isPrivate: false
