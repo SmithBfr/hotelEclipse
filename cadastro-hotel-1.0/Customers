@@ -1,0 +1,182 @@
+type: collection.insomnia.rest/5.0
+name: Customers
+meta:
+  id: wrk_feddfcd068cc404287563a93d893a26a
+  created: 1763608019777
+  modified: 1763655305251
+  description: ""
+collection:
+  - url: http://localhost:8080/customers/3
+    name: Get id - Customers
+    meta:
+      id: req_a76d263c7e3548a69e1197e2276c5604
+      created: 1763608025411
+      modified: 1763681527620
+      isPrivate: false
+      description: ""
+      sortKey: -1763608025411
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "fellipe",
+        	"email": "fellipe@teste.com",
+        	"phone": "212212121",
+        	"create_at": "teste"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/customers
+    name: Post - Customers
+    meta:
+      id: req_9848d9ea624e4964b238b50b4409f310
+      created: 1763608258409
+      modified: 1763681556912
+      isPrivate: false
+      description: ""
+      sortKey: -1750410387629
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "fellipe",
+        	"email": "fellipe@teste.com",
+        	"phone": "21221213321",
+        	"create_at": "teste" ,
+        	"address": {
+            "zipCode": "12345-000",
+            "street": "Rua A",
+            "addressDetails": "Apto 1",
+            "neighborhood": "Centro",
+            "state": "SP"
+          }
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/customers
+    name: Get All - Customers
+    meta:
+      id: req_7920c1fc45064811b66674a38128af2b
+      created: 1763608303846
+      modified: 1763681549350
+      isPrivate: false
+      description: ""
+      sortKey: -1757009206520
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/customers/3
+    name: Delete - Customers
+    meta:
+      id: req_df6b06ab18c2453793492d5b1b4bced0
+      created: 1763608361717
+      modified: 1763681577919
+      isPrivate: false
+      description: ""
+      sortKey: -1743811568738
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/customers/1
+    name: Update - Customers
+    meta:
+      id: req_5e6e3f38bac841ae87bd7debfff12bb2
+      created: 1763608450059
+      modified: 1763681568866
+      isPrivate: false
+      description: ""
+      sortKey: -1747110978183.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "flpe",
+        	"email": "fellipe@teste.com",
+        	"phone": "212212121",
+        	"create_at": "teste"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_105711efefcde75b378faf6edf16b634ddc2f5e1
+    created: 1763608019781
+    modified: 1763608019781
+environments:
+  name: Base Environment
+  meta:
+    id: env_105711efefcde75b378faf6edf16b634ddc2f5e1
+    created: 1763608019779
+    modified: 1763608019779
+    isPrivate: false
